@@ -82,7 +82,7 @@ search("London");
                 <img src={humidity_icon} alt=''/>
                 <div>
                   <p>{weatherData.humidity}%</p>
-                  <span>Humidity</span>
+                  <span>Humiditys</span>
                 </div>
               </div>
                <div className='col'>
