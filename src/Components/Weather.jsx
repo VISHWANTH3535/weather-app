@@ -89,7 +89,7 @@ search("London");
                 <img src={wind_icon} alt=''/>
                 <div>
                   <p>{weatherData.windSpeed} km/h</p>
-                  <span>Wind Speed</span>
+                  <span>Wind Speedddd</span>
                 </div>
               </div>
             </div>
