@@ -1,4 +1,4 @@
-name: Deploy react app to github pages
+name: Deploy React App to GitHub Pages
 
 on:
   push:
@@ -8,24 +8,24 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: checkout repository
-      uses: actions/setup-node@v3
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: "18"
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
 
-    - name: Deploy to Github Pages
-      uses: JamesIves/github-pages-deploy-action@v5
-      with:
-        branch: gh-pages
-        folder: dist
-        token: ${{ Secrets.GITHUB_TOKEN}}
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v5
+        with:
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.GITHUB_TOKEN }}
