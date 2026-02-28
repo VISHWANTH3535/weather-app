@@ -1,8 +1,9 @@
 {
-  "name": "weatherapps",
+  "name": "weatherapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://VISHWANTH3535.github.io/weather-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
