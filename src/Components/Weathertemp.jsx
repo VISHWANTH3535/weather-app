@@ -82,14 +82,14 @@ search("London");
                 <img src={humidity_icon} alt=''/>
                 <div>
                   <p>{weatherData.humidity}%</p>
-                  <span>Humiditys</span>
+                  <span>Humidity</span>
                 </div>
               </div>
                <div className='col'>
                 <img src={wind_icon} alt=''/>
                 <div>
                   <p>{weatherData.windSpeed} km/h</p>
-                  <span>Wind Speeddd</span>
+                  <span>Wind Speed</span>
                 </div>
               </div>
             </div>
